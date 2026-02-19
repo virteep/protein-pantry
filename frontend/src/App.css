@@ -593,6 +593,46 @@ body {
   color: var(--text-primary);
 }
 
+/* Footer */
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.footer-disclaimer {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin: 0 0 0.75rem 0;
+  font-style: italic;
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+}
+
+.footer-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {

@@ -39,6 +39,32 @@ function Navigation() {
   );
 }
 
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <p className="footer-disclaimer">
+          <strong>Disclaimer:</strong> This is not medical advice. This tool is created for the developers' personal use only.
+        </p>
+        <p className="footer-text">
+          Developed by Virtee & Manan
+        </p>
+        <p className="footer-text">
+          Inspired by{' '}
+          <a 
+            href="https://what-the-whey.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            what-the-whey
+          </a>
+        </p>
+      </div>
+    </footer>
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -49,6 +75,7 @@ function App() {
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/recipes/:id" element={<RecipeDetail />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
