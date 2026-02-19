@@ -4,11 +4,8 @@ A simple local-only web application for tracking protein intake with vegetarian 
 
 ## Features
 
-- 📊 **Protein Calculator**: Enter your daily protein goal and see how much of each ingredient you need
 - 🥗 **Ingredient Database**: View protein content per 100g for various vegetarian ingredients
 - 📖 **Recipes**: Pre-configured recipes with total protein calculations
-- 💾 **Local Storage**: Your daily goal is saved in your browser
-- 🚀 **Fully Local**: No cloud, no auth, no database required
 
 ## Tech Stack
 
