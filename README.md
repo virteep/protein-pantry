@@ -1,5 +1,7 @@
 # Protein Pantry
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/virteep/protein-pantry)
+
 A simple local-only web application for tracking protein intake with vegetarian ingredients and pre-made recipes.
 
 ## Features
@@ -157,6 +159,21 @@ npm run build
 ```
 
 The built files will be in `frontend/dist/`.
+
+## Deploying to Vercel
+
+The app is set up to deploy on [Vercel](https://vercel.com) as a static frontend.
+
+1. **Import the project** in the [Vercel dashboard](https://vercel.com/new) and connect your Git repo. No need to set “Root Directory”—`vercel.json` configures the build from the `frontend` folder.
+
+2. **Optional: API URL**  
+   If your backend is deployed elsewhere (e.g. Railway, Render), add an environment variable in Vercel:
+   - **Name:** `VITE_API_URL`
+   - **Value:** your API base URL (e.g. `https://your-api.railway.app/api`)  
+   If you leave this unset, the app uses `/api`, which only works when the same origin serves the API (e.g. via Vercel rewrites or a monolith).
+
+3. **Deploy**  
+   Push to your connected branch; Vercel will run `install` and `build` from `frontend` and serve the built files with SPA routing (all routes fall back to `index.html`).
 
 ## Troubleshooting
 

@@ -1,0 +1,16 @@
+# Backend (not needed for frontend deploy)
+backend/
+# Docs and mockups
+docs/
+mockups/
+*.md
+!README.md
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+# Local / dev
+*.local
+.DS_Store

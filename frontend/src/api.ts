@@ -1,6 +1,6 @@
 import { Ingredient, Recipe } from './types';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL ?? '/api';
 
 export async function fetchIngredients(): Promise<Ingredient[]> {
   const response = await fetch(`${API_BASE}/ingredients`);
